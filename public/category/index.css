@@ -1,0 +1,161 @@
+/* ul.list-main {} */
+
+ul.list-main li {
+    height: 13.33333vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.list-main li span {
+    width: 19.73333vw;
+    height: 6.4vw;
+    border-radius: 3.2vw;
+    text-align: center;
+    line-height: 6.4vw;
+}
+
+ul.list-main li.active>span {
+    color: white;
+    background-color: rgb(210, 142, 52);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 12vw;
+    flex-shrink: 0;
+}
+
+.content {
+    /* border-top: 1px solid #B0B0B0; */
+    /* border-bottom: 1px solid #B0B0B0; */
+    display: flex;
+    /* 隐式高度限定 + overflow:hidden */
+    /* align-items: stretch; */
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+
+/* 一个盒子想要让overfl：auto生效出现滚动条，有两种方法
+ 1.显示设定宽|高
+ 2.如一不行(当前盒子和父盒子不方便设定宽高)，那么这个盒子要隐式表达高度限定
+ 同时父盒子也隐式表达出高度限定并加上overflow：hidden使子盒子overflow：auto生效
+ */
+
+.left {
+    width: 24.8vw;
+    flex-shrink: 0;
+    overflow: auto;
+}
+
+.left::-webkit-scrollbar,
+.right::-webkit-scrollbar {
+    display: none;
+}
+
+.right {
+    flex-grow: 1;
+    /* border-left: 1px solid #B0B0B0; */
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+}
+
+.footer {
+    height: 13.333333vw;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.menu {
+    flex: 1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu a{
+    display: flex;
+    width: 100%;
+    /* text-align: center; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.pic {
+    width: 6.4vw;
+    height: 6.4vw;
+    background-image: url(/images/nav_bg.png);
+    background-size: 100% auto;
+    background-position: 0 0;
+    overflow: hidden;
+}
+
+.right .avatar {
+    width: 69.86666vw;
+    height: 31.266666vw;
+}
+
+.sub-pic {
+    width: 17.6vw;
+    height: 17.6vw;
+    display: block;
+}
+
+.goods-wrapper {
+    background-color: white;
+    width: 69.866666vw;
+    padding: 10px 7px 0 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-content: space-around;
+    flex-direction: column;
+}
+
+.good-name {
+    font-size: 12px;
+    color: #777;
+}
+
+.sub-li {
+    text-align: center;
+    display: block;
+    display: block;
+    width: 17.6vw;
+    margin-bottom: 4vw;
+}
+
+.list-main span {
+    font-size: 14px;
+    color: #777;
+}
+
+.list-sub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.menu span {
+    font-size: 12px;
+    color: #666;
+}
+
+.border-1px::after {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(190, 190, 190);
+}

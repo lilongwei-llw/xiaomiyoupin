@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/public.css" />
+    <link rel="stylesheet" href="/assets/css/1px.css">
+    <link rel="stylesheet" type="text/css" href="/assets/region/regions_picker_m.css" />
+    <link rel="stylesheet" type="text/css" href="index-2.css" />
+    <title>收货地址</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header border-1px">
+            <div><img class="return" src="/images/arrow_left_black.png" alt=""></div>
+            <div class="title" style="line-height: 12vw;text-align: center;">新增地址</div>
+            <div></div>
+        </div>
+        <div class="content ">
+            <div class="line">
+                <div class="lable">收货姓名</div>
+                <input class="receive-name" type="text" class="" placeholder="请输入收货人姓名"></div>
+            <div class="line">
+                <div class="lable">手机号码</div>
+                <input class="receive-phone" type="number" class="" placeholder="请输入收货人电话"></div>
+            <div class="line">
+                <div class="lable">收货地址</div>
+                <input class="receive-region regions-picker" type="text" class="" placeholder="请选择省/市/区/街道"></div>
+            <div class="line">
+                <div class="lable">详细信息</div>
+                <input class="receive-detail" type="text" class="" placeholder="请输入街道地址"></div>
+            <div class="line">
+                <div class="lable">设为默认地址</div>
+                <input class="isdefault" type="checkbox" class=""></div>
+            <div class="line" style="color: red;font-size: 13px;display: none;">
+                <div class="delete-address">删除地址</div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="add-address" style="color: white;font-weight: 600;background-color: rgb(229,58,48);border:none">保存</div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="/assets/js/jQuery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/js-cookie.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/region/regions (1).js"></script>
+<script src="/assets/js/jquery.query.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/region/regions_picker_m.js" type="text/javascript" charset="utf-8"></script>
+<script src="index-2.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $('.return').on('click', function() {
+        window.location.href = '/address/index.html';
+    })
+</script>
+
+</html>

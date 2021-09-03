@@ -1,0 +1,193 @@
+.good {}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    background-color: white;
+}
+
+.head {
+    background-color: white;
+    width: 100%;
+    height: 21.333333vw;
+}
+
+.line-1 {
+    height: 11.733333vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-1 div {
+    line-height: 11.73333vw;
+}
+
+.line-2 {
+    height: 9.6vw;
+    width: 100%;
+    display: flex;
+}
+
+.line-2 span {
+    width: 18vw;
+    line-height: 9.6vw;
+    padding-left: 3vw;
+    box-sizing: border-box;
+}
+
+.active {
+    font-size: 18px;
+}
+
+.asc {
+    color: red;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+    touch-action: pan-y;
+    width: 100%;
+}
+
+.scroll-wrapper {
+    overflow: auto;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(244, 244, 244);
+}
+
+.avatar {
+    width: 33.6vw;
+    height: 33.6vw;
+}
+
+
+/* .good a {
+    display: flex;
+    height: 47.786666vw;
+    width: 93.6vw;
+    flex-wrap: nowrap;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 57.6vw;
+    height: 100%;
+}
+
+.right span {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    height: 32px;
+    font-size: 16px;
+    color: #333;
+}
+
+.brief {
+    height: 49.6px;
+    font-size: 14px;
+    color: #888;
+}
+
+.price {
+    height: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #FA4F0B;
+} */
+
+.sale,
+.rate {
+    font-size: 14px;
+    color: #888;
+    height: 18px;
+    width: 50%;
+}
+
+.order {
+    width: 94.72vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 3vw;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.good {
+    width: 94.72vw;
+    height: 30.4vw;
+    display: flex;
+}
+
+.right {
+    display: flex;
+}
+
+.name {
+    font-size: 16px;
+}
+
+.right-l {
+    width: 40.253333vw;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.right-r {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.price {
+    font-size: 15px;
+    color: #999;
+}
+
+.sale {
+    font-size: 15px;
+    color: black;
+}
+
+.delete {
+    color: #999;
+}
+
+.order-foot-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy {
+    color: red;
+    border: 1px solid red;
+    border-radius: 3vw;
+    padding: 2px 5px;
+}
+
+.hasbuy {
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 3vw;
+    padding: 2px 5px;
+}

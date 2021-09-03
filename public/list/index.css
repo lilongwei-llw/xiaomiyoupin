@@ -1,0 +1,111 @@
+.good {}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    background-color: white;
+}
+
+.head {
+    background-color: white;
+    width: 100%;
+    height: 21.333333vw;
+}
+
+.line-1 {
+    height: 11.733333vw;
+    width: 100%;
+}
+
+.line-2 {
+    height: 9.6vw;
+    width: 100%;
+    display: flex;
+}
+
+.line-2 span {
+    width: 18vw;
+    line-height: 9.6vw;
+    padding-left: 3vw;
+    box-sizing: border-box;
+}
+
+.active {
+    font-size: 18px;
+}
+
+.asc {
+    color: red;
+}
+
+.content {
+    /* display: flex; */
+    flex-grow: 1;
+    overflow: hidden;
+    touch-action: pan-y;
+}
+
+.scroll-wrapper {
+    /* flex-shrink: 0; */
+    /* overflow: auto; */
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 33.6vw;
+    height: 33.6vw;
+}
+
+.good a {
+    display: flex;
+    height: 47.786666vw;
+    width: 93.6vw;
+    flex-wrap: nowrap;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 57.6vw;
+    height: 100%;
+}
+
+.right span {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    height: 32px;
+    font-size: 16px;
+    color: #333;
+}
+
+.brief {
+    height: 49.6px;
+    font-size: 14px;
+    color: #888;
+}
+
+.price {
+    height: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #FA4F0B;
+}
+
+.sale,
+.rate {
+    font-size: 14px;
+    color: #888;
+    height: 18px;
+    width: 50%;
+}

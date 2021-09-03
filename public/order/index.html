@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/public.css" />
+    <link rel="stylesheet" href="/order/index.css">
+    <title>有品</title>
+    <style type="text/css">
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+        }
+        
+        .header {
+            display: flex;
+            width: 100%;
+            height: 24.44444vw;
+            align-items: center;
+            background-color: rgb(224, 180, 84);
+            justify-content: space-between;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        button {
+            margin-top: 14px;
+            width: 82px;
+            height: 35.6px;
+            font-size: 13px;
+            color: #666666;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: white;
+        }
+        /* ------------------------- */
+        
+        #layui-layer1 {
+            width: 84vw;
+            height: 64vw;
+            border-radius: 5vw;
+        }
+        
+        .layui-layer-title {
+            display: none;
+        }
+        
+        .layui-layer-btn0,
+        .layui-layer-btn1 {
+            /* width: 45%; */
+            background-color: white !important;
+            font-size: 14px !important;
+            display: inline-block !important;
+            color: black !important;
+            position: absolute;
+            bottom: 5%;
+            border: none !important;
+            outline: none !important;
+        }
+        
+        .layui-layer-btn1 {
+            color: #845F3F !important;
+            left: 60%;
+        }
+        
+        .layui-layer-btn0 {
+            left: 15%;
+        }
+        /* --------------- */
+    </style>
+</head>
+
+<body>
+    <div class="container" style="overflow: hidden;">
+        <div class="header">
+            <img src="/images/icon_arrow_left.png" style="width: 11.2vw;" class="return">
+            <span style="color: white;font-size: 16px;">确认订单</span>
+            <span style="flex-basis: 11.2vw;color: white;" class="edit"></span>
+        </div>
+        <div class="content-wrapper" style="width: 100%;overflow: auto;flex-grow: 1;background-color: rgb(244,244,244);">
+            <div class="content">
+                <div class="address">
+
+                </div>
+                <div class="cart-list-wrapper" style="background-color: white;">
+
+                    <div class="wrapper-content">
+                    </div>
+
+                </div>
+                <!-- window.location.href='/login/index.html -->
+            </div>
+        </div>
+
+        <div class="address-list-wrapper display-none">
+            <div style="font-size: 15px; text-align: center;font-weight: 600;">选择地址</div>
+            <div class="aaa" style="display: flex;flex-direction: column;"></div>
+        </div>
+        <div class="footer ">
+            <div class="one">
+                <div class="all-price-wrapper" style="font-size: 14px;">合计：
+                    <div class="all-price" style="font-size: 16px;color:#BF1111;"></div>
+                </div>
+                <div class="order-button">提交订单</div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="/assets/js/jQuery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/js-cookie.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/jquery.query.js" type="text/javascript" charset="utf-8"></script>
+<script src="/order/index.js"></script>
+<script>
+    $('.return').on('click', function() {
+        window.location.href = '/cart/index.html';
+    })
+</script>
+
+</html>

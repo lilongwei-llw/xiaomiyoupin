@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/public.css" />
+    <link rel="stylesheet" href="/assets/css/1px.css">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="/plugin/swiper/swiper-bundle.css" />
+
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content-wrapper" style="display: flex;overflow: hidden;">
+            <div class="content">
+                <div class="swiper-container banner">
+                    <div class="return"><img src="/images/icon_arrow_left.png" alt="" style="width: 100%;height: 100%;"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="" alt=""></div>
+                        <div class="swiper-slide"><img src="" alt=""></div>
+                        <div class="swiper-slide"><img src="" alt=""></div>
+                        <div class="swiper-slide"><img src="" alt=""></div>
+                        <div class="swiper-slide"><img src="" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <span class="price"></span>
+                <span class="name"></span>
+                <span class="detail"></span>
+                <div class="other-pic-wrapper">
+                    <div class="other-pic">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <a class="dianpu"><img src="/images/product/icon_product_shop.png" alt=""> 店铺</a>
+            <a class="gouwuche" style="margin-left: 10px;"><img src="/images/product/icon_shop_cart.png" alt=""> 购物车</a>
+            <div class="button-wrapper" style="flex-grow: 1;display: flex;justify-content: center;">
+                <div class="button">
+                    <div class="left-btn">加入购物车</div>
+                    <div class="right-btn">立即购买</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script src="/assets/js/jQuery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="/plugin/swiper/swiper-bundle.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/jquery.query.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/iscroll-probe.js"></script>
+<script src="/assets/js/imagesloaded.js"></script>
+<script src="/assets/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/js-cookie.js" type="text/javascript" charset="utf-8"></script>
+<script src="index.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    console.log($.query.get("cid"));
+    $('.return').on('click', function() {
+        window.location.href = document.referrer
+    })
+</script>
+
+</html>

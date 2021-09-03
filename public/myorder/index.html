@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/public.css" />
+    <link rel="stylesheet" href="/assets/css/1px.css">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="/plugin/swiper/swiper-bundle.css" />
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="line-1">
+                <img class="return" src="/images/arrow_left_black.png" alt="" style="width: 32px;height: 32px;margin-top: 1.5vw;">
+                <div>我的订单</div>
+                <div style="flex-basis: 8.5333vw;"></div>
+            </div>
+            <div class="line-2">
+                <span data-col="list_all" class="active asc">全部</span>
+                <span data-col="list_unpay" class="asc">待付款</span>
+                <span data-col="list_pay" class="asc">已付款</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="scroll-wrapper">
+                <div class="list">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="/assets/js/jQuery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/jquery.query.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/js-cookie.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/imagesloaded.js"></script>
+<script src="index.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    console.log($.query.get("cid"));
+    $('.return').on('click', function() {
+        window.location.href = '/person/index.html'
+    })
+</script>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/public.css" />
+    <link rel="stylesheet" href="/assets/css/1px.css">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>收货地址</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header border-1px">
+            <div><img class="return" src="/images/arrow_left_black.png" alt=""></div>
+            <div style="line-height: 12vw;text-align: center;">收货地址</div>
+            <div></div>
+        </div>
+        <div class="content ">
+            <div class="if-none" style="display: flex;flex-direction: column;align-items: center;padding-top: 30vw;">
+                <img style="width: 90px; height:5.625rem;" src="/images/no_result_address.png">
+                <span style="margin-top: 13px;font-size: 13px;">您还没有收货地址，点击下方新建一个收货地址</span>
+            </div>
+            <div class="address-wrapper">
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="add-address">+添加地址</div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="/assets/js/jQuery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/js-cookie.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/jquery.query.js" type="text/javascript" charset="utf-8"></script>
+<script src="index.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $('.return').on('click', function() {
+        window.location.href = '/person/index.html';
+    })
+</script>
+
+</html>

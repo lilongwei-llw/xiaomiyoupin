@@ -1,0 +1,116 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 12vw;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header div {
+    flex: 1;
+}
+
+.header img {
+    width: 11.733333vw;
+    height: 11.733333vw;
+}
+
+.content {
+    /* border-top: 1px solid #B0B0B0; */
+    /* border-bottom: 1px solid #B0B0B0; */
+    display: flex;
+    /* 隐式高度限定 + overflow:hidden */
+    /* align-items: stretch; */
+    flex-grow: 1;
+    overflow: hidden;
+    background-color: rgb(244, 244, 244);
+    flex-direction: column;
+}
+
+
+/* 一个盒子想要让overfl：auto生效出现滚动条，有两种方法
+ 1.显示设定宽|高
+ 2.如一不行(当前盒子和父盒子不方便设定宽高)，那么这个盒子要隐式表达高度限定
+ 同时父盒子也隐式表达出高度限定并加上overflow：hidden使子盒子overflow：auto生效
+ */
+
+.footer {
+    height: 15.333333vw;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border-1px::after {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(190, 190, 190);
+}
+
+.add-address {
+    width: 92vw;
+    height: 11.733333vw;
+    margin: 2vw 0;
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 2vw;
+    line-height: 11.733333vw;
+    text-align: center;
+}
+
+.address-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+    width: 100%;
+    height: 26.66666vw;
+    padding-left: 14px;
+    box-sizing: border-box;
+    display: flex;
+    padding-right: 8px;
+    background-color: white;
+    border-bottom: 1px solid rgb(160, 160, 160, 0.3);
+    padding-top: 4px;
+}
+
+.left {
+    flex-grow: 1;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right img {
+    width: 4.5333vw;
+    height: 4.5333vw;
+}
+
+.detail {
+    font-size: 12px;
+}
+
+.default {
+    color: red;
+    border: 1px solid red;
+    font-size: 12px;
+}
+
+.xianshi {
+    display: inline;
+}
+
+.buxianshi {
+    display: none;
+}

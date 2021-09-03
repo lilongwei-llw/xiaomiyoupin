@@ -1,0 +1,136 @@
+.wrapper-content {
+    width: 94.72vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-top {
+    width: 100%;
+    height: 11.7333333vw;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+}
+
+.wrapper-bottom {
+    width: 100%;
+    height: 11.7333333vw;
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+}
+
+.good {
+    height: 26.133333vw;
+    width: 100%;
+    display: flex;
+    padding: 10px 2px 0 10px;
+    box-sizing: border-box;
+}
+
+.check-box {
+    width: 4.8vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.check-box .check-box-box {
+    width: 4.8vw;
+    height: 4.8vw;
+    background-image: url(/images/checked.png);
+    background-size: 100% 100%;
+}
+
+.pic {
+    width: 23.466666vw;
+    height: 23.466666vw;
+}
+
+.pic img {
+    width: auto;
+    height: 100%;
+}
+
+.right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    color: red;
+}
+
+.brief {
+    font-size: 14px;
+}
+
+.if-none {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    height: 14.4vw;
+    display: flex;
+    padding-top: 2vw;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.one,
+.two {
+    display: flex;
+}
+
+.two {
+    display: none;
+}
+
+.allcheck {
+    margin-left: 4vw;
+}
+
+.allcheck .allcheck-box {
+    width: 4.8vw;
+    height: 4.8vw;
+    background-image: url(/images/checked.png);
+    background-size: 100% 100%;
+}
+
+.all-price-wrapper {
+    margin-left: 20vw;
+}
+
+.clear-button,
+.order-button {
+    width: 25.6vw;
+    height: 10.133333vw;
+    background-color: rgb(217, 24, 20);
+    color: white;
+    line-height: 10.133333vw;
+    text-align: center;
+    border-radius: 5vw;
+}
+
+.no-check {
+    background-image: url(/images/nochecked.png) !important;
+}
+
+.dec,
+.amount,
+.inc {
+    width: 5.3333333vw;
+    height: 5.3333333vw;
+    line-height: 5.3333333vw;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    font-size: 14px;
+    display: inline-block;
+    color: black;
+}
+
+.pri {
+    display: inline-block;
+    width: 30vw;
+}

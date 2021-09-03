@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/public.css" />
+
+    <title>有品</title>
+    <style type="text/css">
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+        }
+        
+        .header {
+            display: flex;
+            width: 100%;
+            height: 14.44444vw;
+            align-items: center;
+            background-color: white;
+            justify-content: space-between;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        button {
+            margin-top: 14px;
+            width: 82px;
+            height: 35.6px;
+            font-size: 13px;
+            color: #666666;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: white;
+        }
+        
+        .x {
+            color: red;
+            font-size: 16px;
+            vertical-align: bottom;
+            margin-top: 36px;
+        }
+        
+        .price {
+            color: rgb(211, 0, 0);
+            font-size: 30px;
+            font-weight: 700;
+            vertical-align: bottom;
+            margin-top: 20px;
+        }
+        
+        .text {
+            text-align: center;
+            color: rgb(204, 0, 0);
+            margin-top: 10px;
+        }
+        
+        .order-button {
+            height: 13vw;
+            width: 80vw;
+            margin: 8px auto;
+            text-align: center;
+            line-height: 13vw;
+            color: white;
+            background-color: rgb(211, 0, 0);
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 7vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="overflow: hidden;">
+        <div class="header">
+            <img src="/images/arrow_left_black.png" style="width: 8.2vw;" class="return">
+            <span style="color: black;font-size: 16px;">有品收银台</span>
+            <span style="flex-basis: 11.2vw;color: white;" class="edit"></span>
+        </div>
+        <div class="content-wrapper" style="width: 100%;overflow: auto;flex-grow: 1;background-color: rgb(244,244,244);">
+            <div class="content">
+
+                <div style="display: flex;justify-content: center;">
+                    <span class="x">￥</span>
+                    <span class="price">
+                            599
+                        </span>
+                    <span class="x">.00</span>
+                </div>
+                <span class="text">
+						剩余支付时间
+                        <span class="time">
+                        </span>
+                </span>
+
+
+
+            </div>
+        </div>
+
+
+        <div class="footer ">
+            <div class="one">
+                <div class="order-button">确认支付</div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="/assets/js/jQuery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/js-cookie.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/js/jquery.query.js" type="text/javascript" charset="utf-8"></script>
+<script src="/order_pay/index.js"></script>
+<script>
+    $('.return').on('click', function() {
+        window.location.href = document.referrer;
+    })
+</script>
+
+</html>
