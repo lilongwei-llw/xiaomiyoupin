@@ -1,5 +1,5 @@
-# xiaomiyoupin
-小米有品移动端前端项目
+# 小米有品移动端前端项目
+
 项目名称：小米有品移动端前端项目 项目内容： （1）首页home（2）地址管理address （3）商品详情页面：detail （4）分类页面：category（5）登录+注册页面：login （6）购物车页面：cart （7）订单支付页order_pay（8）个人页person
 （9）商品列表页 product-list（10）订单生成页（11）订单提交页（12）个人的订单页面 
 
