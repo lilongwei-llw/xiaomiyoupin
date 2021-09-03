@@ -3,7 +3,7 @@
 项目名称：小米有品移动端前端项目 项目内容： （1）首页home（2）地址管理address （3）商品详情页面：detail （4）分类页面：category（5）登录+注册页面：login （6）购物车页面：cart （7）订单支付页order_pay（8）个人页person
 （9）商品列表页 product-list（10）订单生成页（11）订单提交页（12）个人的订单页面 
 
-所用技术：ajax、jQuery、js、html、css
+所用技术：ajax、jQuery、js、html、css、弹性布局
 
 具体实现效果：
  
@@ -23,4 +23,4 @@
 
 8.个人订单页面 ：查看所有订单、已付款、未付款订单
 
-完成项目中一整套购物流程，约12个页面。 利用ajax进行前端与数据库交互功能，并用一系列插件辅助和完善功能 所用插件：layer、imagesloadsd、iscroll-probe、js-cookie等
+完成项目中一整套购物流程，利用弹性布局实现页面响应式布局，约12个页面。 利用ajax进行前端与数据库交互功能，并用一系列插件辅助和完善功能 所用插件：layer、imagesloadsd、iscroll-probe、js-cookie等
